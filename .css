@@ -328,7 +328,7 @@ padding-bottom:10px !important;
 
 .first_shelf a:hover,
 .second_shelf a:hover {
-  border: 1px solid #var(--yuno-purple-80);
+  border: 1px solid var(--yuno-purple-80);
 }
 
 .first_shelf .item_2:hover {
