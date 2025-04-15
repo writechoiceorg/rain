@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rain</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
     .rm-LandingPage {
       /* margin: auto !important; */
       width: 100% !important;
@@ -16,115 +18,261 @@
       width: 100% !important;
     }
 
-    body {
-      font-family: Inter, sans-serif;
+    .homepage_body {
+      font-family: Montserrat;
       text-align: center;
-      padding: 40px 20px;
-      background-color: var(--color-background, #fff);
-      color: var(--color-text, #000);
+      padding: 80px 20px;
     }
 
     .logo {
-      height: 48px;
+      height: 60px;
       margin-bottom: 20px;
     }
 
     .title {
       font-size: 1.2rem;
       max-width: 800px;
-      margin: 0 auto 40px auto;
+      margin: 0 auto 50px auto;
     }
+
+    /* CARDS */
 
     .cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 24px;
-      max-width: 1100px;
+      max-width: 1440px;
       margin: 0 auto;
     }
 
+    .cards .card picture {
+      height: 0;
+    }
+
+    .cards .card picture .image_dark {
+      display: none;
+    }
+
     .card {
-      background: #f5f5f5;
+      font-family: Montserrat;
+      color: #262626;
+      text-decoration: none;
+      background: #F6F6F6;
       border-radius: 12px;
-      padding: 20px;
-      width: 300px;
+      max-width: 360px;
       text-align: left;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
+      border: 1px solid #DFDFDF;
+    }
+
+    .card:hover {
+      border: 1px solid #F73196;
+    }
+
+    .card:hover h3 {
+      color: #F73196;
+    }
+
+    .card:hover p {
+      color: #262626;
     }
 
     .card img {
       width: 100%;
       border-radius: 8px;
-      margin-bottom: 12px;
+    }
+
+    .card .card_content {
+      padding: 0 16px 16px;
     }
 
     .card h3 {
-      font-size: 1rem;
+      font-size: 17px;
       margin-bottom: 6px;
+      font-weight: 700;
     }
 
     .card p {
-      font-size: 0.9rem;
+      font-size: 15px;
       margin: 0;
     }
 
+    @media only screen and (max-width: 768px) {
+      .homepage_body {
+        padding: 60px 20px;
+      }
+
+      .logo {
+        height: 40px;
+        margin-bottom: 20px;
+      }
+
+      .title {
+        font-size: 1rem;
+        max-width: 440px;
+        margin: 0 auto 50px auto;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .homepage_body {
+        padding: 50px 20px;
+      }
+
+      .logo {
+        height: 34px;
+        margin-bottom: 16px;
+      }
+
+      .title {
+        font-size: 13px;
+        max-width: 300px;
+        margin: 0 auto 34px auto;
+      }
+
+      .card h3 {
+        font-size: 16px;
+      }
+
+      .card p {
+        font-size: 13px;
+      }
+    }
+
+    @media only screen and (max-width: 360px) {
+      .homepage_body {
+        padding: 40px 20px;
+      }
+
+      .card h3 {
+        font-size: 15px;
+      }
+
+      .card p {
+        font-size: 12px;
+      }
+    }
+
     @media (prefers-color-scheme: dark) {
-      body {
+      [data-color-mode="system"] body {
         background-color: #121212;
         color: #f0f0f0;
       }
 
-      .card {
-        background: #1e1e1e;
+      [data-color-mode="system"] .card {
+        background: #1B1B1B;
+        border: 1px solid #434343;
       }
+
+      [data-color-mode="system"] .card:hover {
+        border: 1px solid #F73196;
+      }
+
+      [data-color-mode="system"] .card:hover p {
+        color: #f0f0f0;
+      }
+
+      [data-color-mode="system"] .cards .card picture .image_dark {
+        display: block;
+      }
+
+      [data-color-mode="system"] .cards .card picture .image_light {
+        display: none;
+      }
+    }
+
+    [data-color-mode="dark"] body {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    [data-color-mode="dark"] .card {
+      background: #1B1B1B;
+      border: 1px solid #434343;
+    }
+
+    [data-color-mode="dark"] .card:hover {
+      border: 1px solid #F73196;
+    }
+
+    [data-color-mode="dark"] .card:hover p {
+      color: #f0f0f0;
+    }
+
+    [data-color-mode="dark"] .cards .card picture .image_dark {
+      display: block;
+    }
+
+    [data-color-mode="dark"] .cards .card picture .image_light {
+      display: none;
     }
   </style>
 </head>
 
 <body>
+  <div class="homepage_body">
 
-  <!-- Light/Dark mode logo -->
-  <picture>
-    <source srcset="/static/img/logo-dark.png" media="(prefers-color-scheme: dark)">
-    <img class="logo" src="/static/img/logo-light.png" alt="Rain logo">
-  </picture>
+    <!-- Light/Dark mode logo -->
+    <picture>
+      <img class="logo" src="https://raw.githubusercontent.com/writechoiceorg/rain/refs/heads/main/home/imgs/logo.png"
+        alt="Rain logo">
+    </picture>
 
-  <div class="title">
-    Empower your business with seamless digital card solutions, secure transactions, and a developer-friendly API.
+    <div class="title">
+      Empower your business with seamless digital card solutions, secure transactions, and a developer-friendly API.
+    </div>
+
+    <div class="cards">
+
+      <a class="card" href="/">
+        <picture>
+          <img class="image_dark"
+            src="https://raw.githubusercontent.com/writechoiceorg/rain/main/home/imgs/getting-started-card-dark.svg"
+            alt="Getting Started">
+          <img class="image_light"
+            src="https://raw.githubusercontent.com/writechoiceorg/rain/main/home/imgs/getting-started-card-light.svg"
+            alt="Getting Started">
+        </picture>
+        <div class="card_content">
+          <h3>Getting Started</h3>
+          <p>Launch your card program with easy and fast integration.</p>
+        </div>
+
+      </a>
+
+      <a class="card" href="/">
+        <picture>
+          <img class="image_dark"
+            src="https://raw.githubusercontent.com/writechoiceorg/rain/main/home/imgs/concepts-card-dark.svg"
+            alt="Concepts">
+          <img class="image_light"
+            src="https://raw.githubusercontent.com/writechoiceorg/rain/main/home/imgs/concepts-card-light.svg"
+            alt="Concepts">
+        </picture>
+        <div class="card_content">
+          <h3>Concepts</h3>
+          <p>Discover digital card solutions for secure global transactions.</p>
+        </div>
+      </a>
+
+      <a class="card" href="/">
+        <picture>
+          <img class="image_dark"
+            src="https://raw.githubusercontent.com/writechoiceorg/rain/main/home/imgs/api-reference-card-dark.svg"
+            alt="API Reference">
+          <img class="image_light"
+            src="https://raw.githubusercontent.com/writechoiceorg/rain/main/home/imgs/api-reference-card-light.svg"
+            alt="API Reference">
+        </picture>
+        <div class="card_content">
+          <h3>API Reference</h3>
+          <p>Comprehensive API docs for issuing cards across multiple markets.</p>
+        </div>
+      </a>
+
+    </div>
   </div>
-
-  <div class="cards">
-
-    <div class="card">
-      <picture>
-        <source srcset="/static/img/card-dark-1.png" media="(prefers-color-scheme: dark)">
-        <img src="/static/img/card-light-1.png" alt="Getting Started">
-      </picture>
-      <h3>Getting Started</h3>
-      <p>Launch your card program with easy and fast integration.</p>
-    </div>
-
-    <div class="card">
-      <picture>
-        <source srcset="/static/img/card-dark-2.png" media="(prefers-color-scheme: dark)">
-        <img src="/static/img/card-light-2.png" alt="Concepts">
-      </picture>
-      <h3>Concepts</h3>
-      <p>Discover digital card solutions for secure global transactions.</p>
-    </div>
-
-    <div class="card">
-      <picture>
-        <source srcset="/static/img/card-dark-3.png" media="(prefers-color-scheme: dark)">
-        <img src="/static/img/card-light-3.png" alt="API Reference">
-      </picture>
-      <h3>API Reference</h3>
-      <p>Comprehensive API docs for issuing cards across multiple markets.</p>
-    </div>
-
-  </div>
-
 </body>
 
 </html>
