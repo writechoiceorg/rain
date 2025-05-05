@@ -1,0 +1,33 @@
+<svg width="631" height="159" viewBox="0 0 631 159" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_289_420)">
+<path d="M0 12C0 5.37258 5.37258 0 12 0H619C625.627 0 631 5.37258 631 12V159H0V12Z" fill="#0E0E0E"/>
+<rect x="164.892" y="20.75" width="301.216" height="187" rx="9.90472" fill="#262626"/>
+<rect x="165.452" y="21.3099" width="300.096" height="185.88" rx="9.34484" stroke="url(#paint0_linear_289_420)" stroke-opacity="0.4" stroke-width="1.11976"/>
+<rect x="166.012" y="68.8997" width="298.976" height="41.4311" fill="#1A1A1A"/>
+<rect x="177.21" y="129.367" width="244.108" height="10.0778" rx="5.03892" fill="#0E0E0E"/>
+<rect x="177.21" y="84.5764" width="244.108" height="10.0778" rx="5.03892" fill="#474747"/>
+<rect x="177.21" y="42.0255" width="244.108" height="10.0778" rx="5.03892" fill="#0E0E0E"/>
+<g filter="url(#filter0_d_289_420)">
+<path d="M427.825 116.941C428.174 117.778 427.839 120.95 425.989 121.685C424.139 122.42 421.775 121.685 421.775 121.685L417.486 113.106L410.073 120.519V87.0386L432.782 109.748H424.321C424.736 110.544 427.382 115.877 427.825 116.941Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M412.062 91.8414V115.716L418.031 109.747L423.004 119.695C423.004 119.695 424.35 120.124 424.994 119.695C425.638 119.266 426.279 118.401 425.989 117.705C424.621 114.422 421.015 107.758 421.015 107.758H427.978L412.062 91.8414Z" fill="black"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_289_420" x="392.564" y="79.4784" width="54.9114" height="54.9114" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1.98954"/>
+<feGaussianBlur stdDeviation="1.79059"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.65 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_289_420"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_289_420" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_289_420" x1="164.892" y1="20.75" x2="334.35" y2="242.697" gradientUnits="userSpaceOnUse">
+<stop stop-color="#CACACA"/>
+<stop offset="1" stop-color="#878787" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_289_420">
+<path d="M0 12C0 5.37258 5.37258 0 12 0H619C625.627 0 631 5.37258 631 12V159H0V12Z" fill="white"/>
+</clipPath>
+</defs>
+</svg>
